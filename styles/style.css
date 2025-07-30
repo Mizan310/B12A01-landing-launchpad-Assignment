@@ -102,11 +102,6 @@ header .banner-content h1 {
     margin-bottom: 150px;
 }
 
-/* Action */
-/* section {
-    border: 1px solid blue;
-} */
-
 section.Action {
     display: flex;
     justify-content: space-between;
