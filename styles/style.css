@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-bg {
+    background-color: #F5F8FF;
+}
+
+.text-center {
+    text-align: center;
+}
+
 /* text */
 .inter-normal {
   font-family: "Inter", sans-serif;
@@ -34,13 +47,15 @@
 header {
     background-image: url('../Assets/Hero-bg.png');
     background-size: cover;
-    /* height: 698px; */
 }
 nav {
+    border: 1px solid green;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 150px;
+    margin: 0 auto;
+    padding: 50px 0;
+    max-width: 1540px;
 }
 .nav-title {
     font-size: 34px;
@@ -48,21 +63,122 @@ nav {
     font-weight: bold;
 }
 
-header nav li {
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+nav li a {
+    
     text-decoration: none;
-    list-style-type: none;
+    font-size: 20px;
 }
 
 /* Banner */
-header .banner-content{
+.banner-content{
+    margin: 0 auto;
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+header .banner-content h1 {
+    border: 1px solid red;
+    font-size: 64px;
     font-weight: bold;
-    font-size: 65px;
+    margin: 150px 150px;
+    max-width: 905px;
     color: #252432;
+    margin-bottom: 30px;
 }
 .btn-primary-2 {
     margin-bottom: 150px;
+}
+
+/* Action */
+section.Action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1540px;
+}
+img {
+    border-radius: 48px;
+}
+
+/* main styles */
+main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+main section {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+/* User Styles */
+
+.users {
+    border-radius: 24px;
+    text-align: center;
+    padding: 50px 142px;
+}
+
+.user-info {
+    margin-bottom: 50px;
+}
+
+.users-content {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.user-number {
+    font-size: 80px;
+    color: #4E47FF;
+    font-weight: bold;
+}
+
+.user-status {
+    margin-top: 20px;
+}
+.user-bg {
+    background-color: rgba(78, 71, 255, 0.11);
+}
+
+/* Card Style */
+.cards {
+    margin: 0 auto;
+    padding: 50px 142px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    margin: 0 auto;
+
+}
+
+.cards-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+    max-width: 1540px;
+}
+
+.reviewer {
+    gap: 10px;
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
 }
